@@ -1,0 +1,24 @@
+.sudoku-cell {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  font-size: 24px;
+  outline: none;
+}
+
+.sudoku-grid {
+  display: grid;
+  grid-template-columns: repeat(9, 60px);
+  grid-template-rows: repeat(9, 60px);
+  gap: 2px;
+  margin: 20px auto;
+  width: fit-content;
+}
+
+.sudoku-cell:focus {
+  border-color: blue; /* Highlight cell on focus */
+}
+
+.sudoku-cell::placeholder {
+  color: #ccc;
+}
